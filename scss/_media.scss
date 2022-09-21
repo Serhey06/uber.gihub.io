@@ -1,0 +1,546 @@
+@media (max-width: 1200px){
+
+    .menu{
+        &_item{
+            padding-right: 20px;
+        }
+        &_link{
+            font-size: 13px;
+        }
+    }
+
+    .subheader{
+        .uber_header{
+            top: 13px;
+        }
+        .phone_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 15px;
+        }
+        .phone_call{
+            top: 20px;
+        }
+    }
+
+    .promo{
+        &_header{
+            font-size: 50px;
+        }
+    }
+
+    .mobile{
+        &_item{
+            width: 300px;
+        }
+    }
+
+    .foot_inner{
+        .partners{
+            img{
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .menu{
+        &_item{
+            padding-right: 8px;
+        }
+        &_link{
+            font-size: 10px;
+        }
+    }
+
+    .uber_header{
+        top: 13px;
+    }
+    .phone_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+    }
+    .phone_call{
+        top: 20px;
+    }
+    
+    .subheader{
+        &_logo{
+            img{
+                width: 100%;
+            }
+        }
+        &_official{
+            font-size: 11px;
+        }
+        &_phone{
+            font-size: 18px;
+        }
+        &_btn{
+            margin-top: 4px;
+            width: 100%;
+            height: 40px;
+        }
+    }
+
+    .prem{
+        &_round_first{
+            margin-bottom: 84px;
+        }
+        &_round_second{
+            margin-bottom: 84px;
+        }
+    }
+
+    .promo{
+        &_header{
+            font-size: 40px;
+        }
+        &_subheader{
+            font-size: 30px;
+        }
+    }
+    .mobile{
+        &_item{
+            width: 228px;
+            height: 235px;
+            &_subtittle{
+                font-size: 19px;
+            }
+        }
+    }
+    .foot_inner{
+        .social{
+            width: 165px;
+            .round{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .info{
+            width: 356px;
+            .sublinki{
+                .sublinka{
+                    font-size: 9px;
+                }
+            }
+        }
+        .glavnaya_linka{
+                font-size: 11px;
+        }
+        .partners{
+            img{
+                width: 191px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0, 0.8);
+        z-index: 1;
+        transition: 0.6s;
+        &_active{
+            left: -100%;
+        }
+        &_item{
+            padding-right: 0;
+            border:0;
+            margin: 10px;
+        }
+        &_link{
+            font-size: 20px;
+        }
+    }
+
+    .mobile{
+        &_item{
+            width: 290px;
+            height: 254px;
+        }
+    }
+
+    .uber_header{
+        top: 13px;
+    }
+    .phone_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+    }
+
+    .prem{
+        &_round_first{
+            margin-bottom: 0px;
+        }
+        &_round_second{
+            margin-bottom: 0px;
+        }
+        .container{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        &_item{
+            flex-direction: column;
+            justify-content: start;
+            width: 45%;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+        &_text{
+            width: auto;
+        }
+        &_inner{
+            &_round{
+                justify-content: center;
+            }
+        }
+        .tittle{
+            font-size: 33px;
+            margin-bottom: 20px;
+        }
+    }
+    .hamburger{
+        display: block;
+        position:absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform:  translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform:  translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs-hidden{
+        display: none;
+    }
+    .xs-visible{
+        display: block;
+    }
+    .subheader{
+        &_phone{
+            display: block;
+            margin-top: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_btn{
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        &_inner{
+            position: absolute;
+            top: -17px;
+        }
+    }
+    .promo{
+        &_header{
+            line-height: 45px;
+        }
+    }
+    .uber{
+        .pod_dark{
+            .uber_img{
+                img{
+                    width: 513px;
+                }
+            }
+        }
+    }
+    .world{
+        &_wrap{
+            .world_tittle{
+                font-size: 32px;
+            }
+        }
+    }
+    .foot_inner{
+        .social{
+            width: 155px;
+            .round{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .info{
+            width: 225px;
+            .sublinki{
+                width: 243px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap-reverse;
+                .sublinka{
+                    font-size: 9px;
+                }
+            }
+            .poloska{
+                width: 211px;
+            }
+            .last_linka{
+                font-size: 14px;
+            }
+        }
+        .glavnaya_linka{
+                font-size: 10px;
+        }
+        .partners{
+            img{
+                width: 155px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px){
+    nav{
+        height: 30px;
+    }
+    header{
+        height: 30px;
+    }
+    .subheader{
+        height: 60px;
+        top: 30px;
+        &_official{
+            display: none;
+        }
+        &_phone{
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 11px;
+        }
+        &_btn{
+            margin-top: 6px;
+            width: 110px;
+            height: 22px;
+            font-size: 8px;
+        }
+    }
+    .promo{
+        min-height: 400px;
+        padding: 93px 0 35px 0;
+        &_descr{
+            display: none;
+        }
+        &_header{
+            font-size: 30px;
+            padding: 0 24px;
+            line-height: 35px;
+        }
+        &_subheader{
+            font-size: 20px;
+            margin-top: 33px;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+        &_btn{
+            width: 210px;
+            height: 50px;
+            margin-top: 72px;
+        }
+    }
+    .menu{
+        width: 85%;
+        &_item{
+            width: 100%;
+            text-align: center;
+        }
+        &_link{
+            display: block;
+        }
+    }
+    .prem{
+        padding: 22px 0 36px 0;
+        .tittle{
+            font-size: 18px;
+        }
+        &_item{
+            width: 100%;
+        }
+        &_round{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .tittle{
+        font-size: 16px;
+        margin-top: 15px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    .mobile{
+        .tittle{
+            font-size: 16px;
+            margin-top: 15px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+        .subtittle{
+            font-size: 14px;
+        }
+        &_item{
+            width: 290px;
+            height: 254px;
+            &_subtittle{
+                font-size: 18px;
+            }
+        }
+    }
+    .uber{
+        height: 500px;
+        .pod_dark{
+            .tittle{
+                display: none;
+            }
+            .subtittle{
+                display: none;
+            }
+            .footer_text{
+                font-size: 17px;
+                color:white;
+            }
+            .uber_img{
+                img{
+                    width: 300px;
+                    height: 190px;
+                }
+            }
+        }
+        .pod_white{
+            display: none;
+        }
+    }
+    .require{
+        .tittle{
+            font-weight: 700;
+            font-size: 16px;
+        }
+        &_tittle{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        &_list{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .world{
+        &_img{
+            width: 100%;
+            height: 360px;
+        }
+        &_subtittle{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &_link{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .world_wrap{
+            height: 380px;
+            .world_tittle{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+    .phone_btn{
+        display: flex;
+        justify-content: center;
+        top: 13px;
+    }
+    .uber_header{
+        top: 11px;
+    }
+
+    footer{
+        min-height: 250px;
+        .foot_inner{
+            flex-direction: column;
+            width: 100%;
+            .social{
+                margin: 0 auto;
+                margin-top: 165px;
+                width: 44%;
+            }
+            .info{
+                width: 100%;
+                .sublinki{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    .sublinka{
+                        font-size: 15px;
+                    }
+                }
+                .poloska{     
+                    width: 80%;
+                }
+                .glavnie_linki{
+                    margin-top: 24px;
+                }
+                .glavnaya_linka{
+                    font-size: 16px;
+                }
+                .last_linka{
+                    margin-left: 19px;
+                    margin-top: 110px;
+                }
+            }
+            .partners{
+                margin-top: 11px;
+                margin-left: 15px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
